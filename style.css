@@ -1,0 +1,288 @@
+body {
+	background: #c0c4c8;
+	font-family: "Courier";
+	margin: 0;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	height: 100vh;
+}
+
+#main {
+	display: flex;
+	flex-direction: column;
+	background: #fff;
+	width: 800px;
+	min-width: 500px;
+	max-height: 500px;
+	border: 3px solid #aaaaaa;
+	outline: 2px solid #000;
+	position: relative;
+	box-sizing: border-box;
+	letter-spacing: -0.1em;
+}
+
+header {
+	display: flex;
+	flex-direction: column;
+}
+
+#title-bar {
+	display: flex;
+	height: 1.5em;
+
+	font-family: "Courier";
+	font-size: 1.1em;
+	letter-spacing: -0.1em;
+}
+
+#title-bar button {
+	background: #c0c4c8;
+	border: 1px solid #000;
+	width: 2em;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	padding: 0;
+}
+
+#title-bar .button {
+	box-shadow: inset -2px -2px #84888c, inset 1px 1px #fcfcfc;
+}
+
+#title-bar button #close {
+	width: 13px;
+	height: 1px;
+	background: #ffffff;
+	border: 1px solid #000000;
+	display: block;
+	box-shadow: 1px 1px #85898d;
+}
+
+#title-bar button #down {
+	width: 0;
+	height: 0;
+	border-left: 5px solid transparent;
+	border-right: 5px solid transparent;
+	border-bottom: 5px solid #000;
+	display: block;
+}
+
+#title-bar button #up {
+	width: 0;
+	height: 0;
+	border-left: 5px solid transparent;
+	border-right: 5px solid transparent;
+	border-top: 5px solid #000;
+	display: block;
+}
+
+#title-bar section {
+	background: #0004a7;
+	width: 91%;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	border-bottom: 1px solid #000;
+}
+
+#title-bar section h1 {
+	color: #fff;
+	width: auto;
+	margin: 0;
+	font-size: 1em;
+	display: inline-block;
+}
+
+#title-bar h1 span {
+	background: #000;
+	color: #fff;
+}
+
+#header {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	background: #84888c;
+	height: 32px;
+	font-weight: bold;
+}
+
+#header img {
+	display: none;
+}
+
+#header #form {
+	display: flex;
+}
+
+#header #form #email {
+	letter-spacing: -0.1em;
+	font-size: 1em;
+}
+
+#header #form #submit {
+	background: #c0c4c8;
+	box-shadow: inset -2px -2px #84888c, inset 2px 2px #fcfcfc;
+	border: 1px solid #000;
+	display: flex;
+	align-items: center;
+	border-radius: 1px;
+	font-weight: bold;
+	font-family: "Courier";
+	letter-spacing: -0.1em;
+	font-size: 1em;
+}
+
+#nav-bar ul {
+	display: flex;
+	list-style: none;
+	margin: 0;
+}
+
+#nav-bar ul li {
+	background: #c0c4c8;
+	box-shadow: inset -2px -2px #84888c, inset 2px 2px #fcfcfc;
+	border: 1px solid #000;
+	height: 30px;
+	display: flex;
+	align-items: center;
+	border-radius: 1px;
+}
+
+#nav-bar ul li .nav-link {
+	text-decoration: none;
+	color: #000;
+	font-size: 1em;
+	padding: 0.8em;
+}
+
+#container {
+	border: 1px solid #000;
+	padding: 0 50px;
+	height: 400px;
+	overflow: scroll;
+}
+
+#container button {
+	background: #c0c4c8;
+	box-shadow: inset -2px -2px #84888c, inset 2px 2px #fcfcfc;
+	border: 1px solid #000;
+	height: 30px;
+	display: flex;
+	align-items: center;
+	letter-spacing: -0.1em;
+	font-weight: bold;
+}
+
+#container section {
+	scroll-snap-align: start;
+	margin-bottom: 5em;
+}
+
+#shop {
+	margin-top: 1em;
+	display: flex;
+	justify-content: space-around;
+	width: 100%;
+}
+
+#shop-card {
+	display: flex;
+	width: 250px;
+	height: 250px;
+	align-items: center;
+	flex-direction: column;
+	justify-content: space-around;
+}
+
+#shop-card img {
+	width: 60px;
+}
+
+#shop-card p {
+	margin: 0;
+}
+
+#shop-card span {
+	font-weight: bold;
+}
+
+#shop-card p {
+	font-size: 1em;
+}
+
+#video-container {
+	display: flex;
+	justify-content: center;
+}
+
+#store {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+}
+
+#store-card {
+	border: 2px solid #000;
+	padding: 10px;
+	box-shadow: 20px 15px #84888c;
+	margin-bottom: 2em;
+	width: 25%;
+}
+
+::-webkit-scrollbar {
+	width: 26px;
+}
+
+::-webkit-scrollbar-track {
+	background: #c0c4c8;
+	border-left: 1px solid #000;
+}
+
+::-webkit-scrollbar-track:active {
+	background: #84888c;
+}
+
+::-webkit-scrollbar-thumb {
+	background: #c0c4c8;
+	box-shadow: inset -2px -2px #84888c, inset 2px 2px #fcfcfc;
+	border: 1px solid #000;
+}
+
+Footer {
+	background: #c0c4c8;
+	border: 1px solid #000;
+	padding: 0.2em 0.8em;
+	position: absolute;
+	bottom: 0;
+	margin: 0;
+	width: 100%;
+	box-sizing: border-box;
+
+	font-family: "Courier";
+	font-size: 1em;
+	letter-spacing: -0.1em;
+}
+
+Footer #description {
+	background: #c0c4c8;
+	margin: 0;
+	padding: 0.3em;
+	font-size: 1em;
+	box-shadow: inset -1px -1px #fcfcfc, inset 2px 2px #84888c;
+}
+
+@media (max-width: 500px) {
+	#shop {
+		flex-direction: column;
+	}
+	
+	#store {
+		flex-direction: column;
+	}
+	
+	#store-card {
+		width: 100%;
+	}
+}
