@@ -1,0 +1,23 @@
+{
+  "name": "veos",
+  "version": "9.3.0",
+  "description": "",
+  "main": "index.js",
+
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": ["VeOS, Vistas, VlaicuOS, vlaicuOS, NikusOS"],
+  "author": "VeSoft and Vistas",
+  "license": "MIT",
+  "devDependencies": {
+    "electron": "^24.2.0",
+    "electron-builder": "^24.3.0"
+  },
+  "build": {
+    "linux": {
+      "target": "AppImage"
+    }
+  }
+
+}
