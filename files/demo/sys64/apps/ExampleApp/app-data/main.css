@@ -1,0 +1,607 @@
+@font-face {
+    font-family: segoeui;
+    src: url(../../../webfonts/segoeui.ttf);
+}
+
+@font-face {
+    font-family: segoeuil;
+    src: url(../../../webfonts/segoeuil.ttf);
+}
+
+@font-face {
+    font-family: segoeuisl;
+    src: url(../../../webfonts/segoeuisl.ttf);
+}
+
+@font-face {
+    font-family: segoeuib;
+    src: url(../../../webfonts/segoeuib.ttf);
+}
+
+@font-face {
+    font-family: segoeuisb;
+    src: url(../../../webfonts/seguisb.ttf);
+}
+
+/* Dropdown Button */
+.cb_dropbtn {
+    position: fixed;
+    opacity: 0;
+    background-color: rgb(17, 17, 17);
+    color: white;
+    padding: 0;
+    width: 5px;
+    height: 30px;
+    top: 0px;
+    right: 0;
+    border: none;
+}
+
+/* The container <div> - needed to position the dropdown content */
+.charmsbar {
+    position: fixed;
+    top: 0px;
+    right: 0px;
+    display: inline-block;
+    z-index: 99994;
+}
+
+/* Dropdown Content (Hidden by Default) */
+.cb_dropdown-content {
+    position: fixed;
+    right: 0px;
+    top: 0px;
+    background-color: rgb(17, 17, 17);
+    width: 106px;
+    height: 100vh;
+    z-index: 99994;
+    transform: translateX(106px);
+    position: fixed;
+    transition: ease 0.2s 0.4s;
+    
+}
+
+.cb_dropdown-content div {
+    position: absolute;
+    top: 50%;
+    margin-top: -250px;
+    width: 106px;
+}
+
+
+/* Links inside the dropdown */
+.cb_dropdown-content div a {
+    height: 100px;
+    color: white;
+    text-decoration: none;
+    display: block;
+    transform: translateX(106px);
+    transition: ease 0.2s 0.4s;
+}
+
+/* Change color of dropdown links on hover */
+.cb_dropdown-content div a:hover {background-color: rgb(43, 43, 43);}
+
+/* Show the dropdown menu on hover */
+.charmsbar:hover .cb_dropdown-content {
+    transform: translateX(0);
+    position: fixed;
+    transition: ease 0.2s;
+}
+
+.charmsbar:hover .cb_dropdown-content div a { 
+  transform: translateX(0);
+  transition: ease 0.2s 0.1s;
+}
+
+.hover_blue:hover i{
+    color:#5252fe;
+}
+
+
+.metroAppHeader {
+    width: 100%;
+    top: -20px;
+    height: 30px;
+    opacity: 0;
+    background-color: rgb(17, 17, 17);
+    /*animation-duration: 0.3s;
+    animation-name: METRO_headerAni;
+    animation-timing-function: ease-out;*/
+    position: fixed;
+    /*animation-fill-mode: forwards;*/
+    z-index: 99990;
+    transition: 0.2s 0.2s ease;
+}
+
+.metroAppHeader:hover {
+    opacity:1;
+    top:0;
+    transition: 0.2s ease;
+}
+
+
+
+.metroAppHeader h6 {
+    font-size: 12;
+    font-family: 'segoeui';
+    color: white;
+    padding-top: 4px;
+    text-align: center;
+}
+
+.METRO_close {
+    position: absolute;
+    right: 0px;
+    top: 0px;
+    width: 30px;
+    height: 30px;
+    background-image: url(../../../ui/close.png);
+}
+
+.METRO_close:hover {
+    background-image: url(../../../ui/close_hover.png);
+}
+
+.METRO_close:active {
+    background-image: url(../../../ui/close_active.png);
+}
+
+.metroIcon {
+    position: absolute;
+    left: 3px;
+    top: 2px;
+}
+
+@keyframes METRO_headerAni {
+    0%   { transform: translateY(0px); }
+    100% { transform: translateY(29px); }
+}
+
+
+
+.nocursor {
+    cursor: none;
+}
+
+.hidden {
+    display: none;
+}
+
+a {
+    cursor:default;
+}
+
+.charmsbar_settengs {
+    background-color: rgb(24, 0, 82);
+    width: 346px;
+    height: 100vh;
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    display: none;
+    z-index: 10;
+}
+
+.cb_panels_container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: stretch;
+    height: 100vh;
+    border: 5px solid black;
+}
+.cb_panel {
+    flex: 0 0 346px;
+    background-color: #FF9999;
+}
+.cb_bg{
+    flex: 1 1 25%;
+    background-color: #9999FF;
+}
+
+ .metrosplash {
+     width: 100vw;
+     height: 100vh;
+     position: absolute;
+     top: 0px;
+     left: 0px;
+     z-index: 99995;
+ }
+
+ .metrosplash img {
+    position: absolute;
+    top:50%;
+    left: 50%;
+ }
+
+ .metrosplashhideani {
+    animation-name: metrosplashhideaniani;
+    animation-duration: 0.2s;
+    animation-timing-function: ease;
+    animation-fill-mode: forwards;
+ }
+
+ @keyframes metrosplashhideaniani {
+    0%{opacity: 1;}
+     100%{opacity: 0;}
+ }
+
+ .metrobutton {
+    color: #000000;
+    font-size: 16px;
+    font-family: 'segoeuisl';
+    background: #cccccc;
+    padding: 10px 20px 10px 20px;
+    text-decoration: none;
+  }
+  
+  .metrobutton:hover {
+    background: #707070;
+    text-decoration: none;
+  }
+
+  .metrobutton2 {
+    color: white;
+    font-size: 16px;
+    font-family: 'segoeui';
+    background: rgb(31, 0, 104);
+    padding-left: 22px;
+    padding-right: 22px;
+    padding-top: 2px;
+    padding-bottom: 2px;
+    text-decoration: none;
+    border: 2px solid white;
+    
+  }
+  
+  .metrobutton2:hover {
+    background: rgb(60, 33, 124);
+    text-decoration: none;
+  }
+
+  .metrobutton2:focus {
+      outline: none;
+  }
+
+  .metrobutton2:active {
+      outline: none;
+      background-color: white;
+      color: black;
+  }
+
+  body{
+    user-select: none;
+  }
+
+  button{
+      cursor: default;
+  }
+
+  .openappani {
+    width: 100vw;
+    height: 100vh;
+    background-color: aqua;
+    position: absolute;
+    left:10vh;
+    animation: animationopenapp 0.7s ease forwards;
+    z-index: 99999;
+  transform-origin: 0 50%;
+  transform:
+  scale(0.2,0.2)
+  perspective(200px)
+  rotateY(15deg);
+}
+
+.openappani img {
+    transform: scale(0.2,0.2);
+    animation: animationopenapplogo 0.5s ease forwards;
+}
+
+
+@keyframes animationopenapp {
+    100% {transform: scale(1,1)  rotateY(0); top: 0; left: 0;}
+}
+
+@keyframes animationopenapplogo {
+    100% {transform: scale(1,1);}
+}
+
+  .progress-ring {
+    position: relative;
+    padding-top: 8px;
+    width: 40px;
+    height: 40px;
+    margin: auto;
+  }
+  .progress-ring .progress-ring__wrap {
+    position: absolute;
+    width: 38px;
+    height: 38px;
+  }
+  .progress-ring .progress-ring__wrap .progress-ring__circle {
+    transform: rotate(225deg);
+    animation-iteration-count: infinite;
+    animation-name: orbit;
+    animation-duration: 4000ms;
+    width: 38px;
+    height: 38px;
+    opacity: 0;
+  }
+  .progress-ring .progress-ring__wrap .progress-ring__circle:after {
+    content: '';
+    position: absolute;
+    width: 6px;
+    height:6px;
+    border-radius: 6px;
+    background: #ffffff;
+    /* Pick a color */
+  }
+  .progress-ring .progress-ring__wrap:nth-child(2) {
+    transform: rotate(-14deg);
+  }
+  .progress-ring .progress-ring__wrap:nth-child(2) .progress-ring__circle {
+    animation-delay: 133.33333333ms;
+  }
+  .progress-ring .progress-ring__wrap:nth-child(3) {
+    transform: rotate(-28deg);
+  }
+  .progress-ring .progress-ring__wrap:nth-child(3) .progress-ring__circle {
+    animation-delay: 266.66666667ms;
+  }
+  .progress-ring .progress-ring__wrap:nth-child(4) {
+    transform: rotate(-42deg);
+  }
+  .progress-ring .progress-ring__wrap:nth-child(4) .progress-ring__circle {
+    animation-delay: 400ms;
+  }
+  .progress-ring .progress-ring__wrap:nth-child(5) {
+    transform: rotate(-56deg);
+  }
+  .progress-ring .progress-ring__wrap:nth-child(5) .progress-ring__circle {
+    animation-delay: 533.33333333ms;
+  }
+  @keyframes orbit {
+    0% {
+      transform: rotate(225deg);
+      opacity: 1;
+      animation-timing-function: ease-out;
+    }
+    7% {
+      transform: rotate(345deg);
+      animation-timing-function: linear;
+    }
+    35% {
+      transform: rotate(495deg);
+      animation-timing-function: ease-in-out;
+    }
+    42% {
+      transform: rotate(690deg);
+      animation-timing-function: linear;
+    }
+    70% {
+      transform: rotate(835deg);
+      opacity: 1;
+      animation-timing-function: linear;
+    }
+    76% {
+      opacity: 1;
+    }
+    77% {
+      transform: rotate(955deg);
+      animation-timing-function: ease-in;
+    }
+    78% {
+      transform: rotate(955deg);
+      opacity: 0;
+    }
+    100% {
+      transform: rotate(955deg);
+      opacity: 0;
+    }
+  }
+
+  .metro_checkbox {
+    width: 50px;
+    height: 19px;
+    background-color: rgb(166,166,166);
+  }
+
+  .metro__checkbox {
+    width: 46px;
+    height: 15px;
+    background-color: rgb(166,166,166);
+    border: 1px white solid;
+    position: absolute;
+    top:2px;left:2px;
+  }
+
+  .metro___checkbox {
+    background-color: black;
+    width: 12px;height: 19px;
+    position: absolute;
+    left: 0;top:0;
+    z-index: 1;
+  }
+
+  .metro__activecheckbox {
+    width: 46px;
+    height: 15px;
+    background-color: rgb(166,166,166);
+    border: 1px white solid;
+    position: absolute;
+    top:2px;left:2px;
+  }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  /*                   CHARMSBAR STYLES               */
+
+
+
+  .cb_bgforpanel {
+    width: 100vw;
+    height: 100vh;
+    display:none;
+    position:fixed;
+    top:0;left:0;
+    z-index:99994;
+  }
+
+  .cb_panel_settengs_tile {
+    color: white;
+    font-size: 16px;
+    font-family: 'segoeuisl';
+    position: absolute;
+    padding-left: 40px;
+    padding-top: 12px;
+    height: 50px;
+    width: 100%;
+  }
+
+  .cb_panel_settengs_tile:hover {
+    background-color: rgb(50,7,148);
+  }
+
+  .cb_panel_settengs_tile:active {
+    transform: scale(0.98,0.98);
+    transition: ease 0.2s;
+  }
+
+  .cb_panel_settengs_tile_notactive {
+    color:rgb(142,124,184);
+    font-size: 16px;
+    font-family: 'segoeuisl';
+    position: absolute;
+    padding-left: 40px;
+    padding-top: 12px;
+    height: 50px;
+    width: 100%;
+}
+
+  .cb_panel_settengs {
+    width:356px;
+    height:100vh;
+    background-color: rgb(31, 0, 104);
+    z-index: 99995;
+    position:fixed;
+    right:0;
+    top:0;
+    transform: translateX(356px);
+    transition: ease 0.3s;
+  }
+
+  .cb_panel_settengs_show {
+    width:356px;
+    height:100vh;
+    background-color: rgb(31, 0, 104);
+    z-index: 99995;
+    position:fixed;
+    right:0;
+    top:0;
+    transform: translateX(0px);
+    transition: ease 0.5s;
+
+  }
+
+  .cb_panel_settengs_bigtile {
+    width: 88px;
+    height: 90px;
+    position: absolute;
+  }
+
+  .cb_panel_settengs_bigtile:hover {
+    background-color: rgb(60, 33, 124);
+  }
+
+  .cb_panel_settengs_bigtile:active {
+    transform: scale(0.98,0.98);
+    transition: ease 0.2s;
+  }
+
+  .cb_panel_settengs_bigtile img {
+    position: absolute;
+  }
+
+  .cb_panel_settengs_bigtile h3 {
+    position: absolute;
+    bottom: 15px;
+    color:white;
+    text-align: center;
+    font-size: 12px;
+    font-family: 'segoeuil';
+    width: 88px;
+  }
+
+  .cb_panel_settengs_line {
+    width: 265px;
+    height: 1px;
+    background-color: rgb(85,61,140);
+    position: absolute;
+    left:40px;
+    bottom: 282px;
+  }
+
+  .cb_panel_appinfo {
+    width:356px;
+    height:100vh;
+    background-color: white;
+    z-index: 99995;
+    position:fixed;
+    right:0;
+    top:0;
+    transform: translateX(356px);
+    transition: ease 0.3s;
+}
+
+  .cb_panel_appinfo_show {
+    width:356px;
+    height:100vh;
+    background-color: white;
+    z-index: 99995;
+    position:fixed;
+    right:0;
+    top:0;
+    transform: translateX(0px);
+    transition: ease 0.5s;
+
+  }
+
+  .cb_panel_appinfo_header {
+    height: 80px;
+    width: 356px;
+    background-color: rgb(31,0,104);
+  }
+
+  .cb_panel_appinfo p {
+    font-family: 'segoeuil';
+    font-size:16px;
+    color:black;
+    padding-top: 25px;
+    padding-left: 40px;
+    padding-right: 40px;
+  }
+
+  .cb_panel_appinfo_show p {
+    font-family: 'segoeuil';
+    font-size:16px;
+    color:black;
+    padding-top: 25px;
+    padding-left: 40px;
+    padding-right: 40px;
+  }
