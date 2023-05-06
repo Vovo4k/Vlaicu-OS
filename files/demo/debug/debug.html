@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../sys64/css/bootstrap.min.css">
+    <link rel="stylesheet" href="../sys64/css/icon-font.min.css">
+    <link rel="stylesheet" href="../sys64/apps/ExampleApp/app-data/main.css">
+    <link rel="shortcut icon" href="images/logo.png">  
+    <style>
+        @font-face {
+            font-family: "biosfont";
+            src: url(biosfont.ttf);
+        }
+
+        p{
+            color: white;
+        }
+        a{
+            color: rgb(255, 255, 255);
+            cursor: default;
+        }
+        a:hover{
+            color: aqua;
+        }
+        a:focus{
+            color: aqua;
+            outline: none;
+        }
+        td {
+            background-color: blue;
+            border-width: 2px;
+            border-color: aqua;
+        }
+    </style>
+    <title>DEBUG MENU</title>
+</head>
+<body style="font-family: 'biosfont'; background-color: rgb(0, 0, 0);"  >
+    <div style="width: 100vw; height: 28px; background-color: rgb(0, 0, 0); color: black;position: absolute; top: 0px;left: 0px;">
+        <p style="position:absolute; top: 50%; margin-top: -6px; left: 120px; color: rgb(255, 255, 255);">DEBUG MENU</p>
+    </div>
+    <div style="margin-left: 120px; margin-top: 60px;color: white;">
+        <P style="margin-top: 20px;">BOOT TO...</P>
+        <ul>
+            <li>
+                <a href="../sys64/BOOTLOADER.html">Boot to systen</a>
+            </li>
+        </ul>
+    </div>
+    <div style="margin-left: 120px; margin-top: 60px;color: rgb(255, 0, 0);">
+        <P style="margin-top: 20px;">localStorage options</P>
+        <ul>
+            <li>
+                <a href="Erase.html">ERASE DATA</a>
+            </li>
+        </ul>
+    </div>
+    <script src="../../script/jquery-2.1.1.js"></script>
+</body>
